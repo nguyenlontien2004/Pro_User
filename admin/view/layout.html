@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="../../libs/angular.min.js"></script>
+    <script src="../../libs/angular-route.js"></script>
+
+    <style>
+        /* Custom CSS */    
+        body {
+            color: #101828;
+            background-color: #f2f4f7;
+        }
+
+        header,
+        .footer {
+            background-color: #166987;
+
+        }
+
+        .footer {
+            color: white;
+            height: 50px;
+
+        }
+
+        .menu,
+        .content {
+            background: white;
+        }
+
+        .divider {
+            border-right: 1px solid #ccc;
+            height: 100%;
+        }
+
+        .search-bar {
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+        }
+
+        .notification-icon {
+            font-size: 24px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .vertical-menu a {
+            background-color: #ffffff;
+            color: black;
+            display: block;
+            padding: 12px;
+            text-decoration: none;
+        }
+
+        .vertical-menu a:hover {
+            background-color: #ddd;
+        }
+
+        .dropdown-menu {
+            background-color: #f2f2f2;
+            border: none;
+        }
+
+        .dropdown-item {
+            color: black;
+        }
+
+        .dropdown-item:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body ng-app="myRoute">
+
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class=" text-white">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+                        <!-- Logo -->
+                        <img src="../../anh/logo/remo_logo.png" alt="Logo" height="70">
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <!-- Search Bar -->
+                        <div class="input-group">
+                            <input type="text" class="form-control" ng-model="tkiem" placeholder="Search...">
+                            <button class="btn btn-primary" ng-click="search()">Tìm kiếm</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3 text-center">
+                        <!-- Notification Icon and Avatar -->
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.yDjKYzD9gdvQVmpeJ_e84gHaHa&pid=Api&P=0&h=180"
+                            alt="Avatar" class="avatar">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Main -->
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <!-- Cột bên trái -->
+                <div class="col-md-3">
+                    <div class="accordion mt-3" id="menuAccordion">
+                        <!-- Thanh menu Thêm -->
+                        <div class="menu text-center">
+                            <div class="vertical-menu">
+                                <div class="menu1  border-1 border-bottom ">
+                                    <a href="#menu1" data-bs-toggle="collapse">Sản Phẩm</a>
+                                    <div id="menu1" class="collapse border-1 border-bottom">
+                                        <a class=" border-1 border-bottom " href="#!/trang-chu">Danh Sách Sản
+                                            Phẩm</a>
+                                        <a class=" border-1 border-bottom " href="#!/add">Thêm Sản
+                                            Phẩm</a>
+
+                                    </div>
+                                </div>
+                                <div class="menu2  border-1 border-bottom ">
+                                    <a href="#menu2" data-bs-toggle="collapse">Vé Máy Bay</a>
+                                    <div id="menu2" class="collapse border-1 border-bottom">
+                                        <a class=" border-1 border-bottom " href="#!/list_booking">Danh Sách Sản
+                                            Phẩm</a>
+                                        <a class=" border-1 border-bottom " href="#!/add-bk">Thêm vé máy bay</a>
+
+                                    </div>
+                                </div>
+                                <div class="menu3 border-1 border-bottom">
+                                    <a href="#menu3" data-bs-toggle="collapse">Admin</a>
+                                    <div id="menu3" class="collapse">
+                                        <a class=" border-1 border-bottom " href="#!/dn">Đăng nhập</a>
+                                        <a class=" border-1 border-bottom " href="#!/dk">Đăng ký</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cột bên phải -->
+                <div class="col-md-9">
+                    <div class="content">
+                        <div class="" ng-view="">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer text-center mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="mt-2">© 2024 @Chiến Đấu đê</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../../js/controller/ListBKController.js"></script>
+    <script src="../../js/controller/AddBKController.js"></script>
+    <script src="../../js/controller/CtCBController.js"></script>
+    <script src="../../js/controller/EditCBController.js"></script>
+    <script src="../../js/controller/AddCBController.js"></script>
+    <script src="../../js/controller/ListController.js"></script>
+    <script src="../../js/route/route.js"></script>
+</body>
+
+</html>

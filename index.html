@@ -1,0 +1,196 @@
+<div class="conten_tt">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-interval="2000" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./anh/banner/cc2.jpg" class="d-block w-100" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="./anh/banner/gg.jpeg" class="d-block w-100" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://img3.thuthuatphanmem.vn/uploads/2019/10/14/banner-du-lich-da-lat_113653910.jpg"
+                        class="d-block w-100" alt="Banner 3">
+                </div>
+
+            </div>
+        </div>
+        <!-- Left and right controls/icons -->
+        <div class="bnt">
+            <button class="carousel-control-prev mt-5" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next mt-5" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="content67">
+        <div class="container">
+            <div class="chuyenbay_hot">
+                <div class="titel">
+                    <h2 class="text-center m-4 ">{{title}}</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 mb-4" ng-repeat="pr in products | filter:tkiem ">
+                        <div class="thumbnail">
+                            <div class="content5">
+                                <div class="cb">
+                                    <img src="./anh/products/chuyenbay1.jpg" class="rounded w-100"
+                                        style="object-fit: cover;">
+                                    <div class="caption m-3">
+                                        <p class="fw-bolder mb-2">{{pr.diadiem}} đến</p>
+                                        <p class="fw-bolder"> Tp. Hồ Chí Minh(SGN)</p>
+                                        <div class="hang">
+                                            <div class="cbn">
+                                                <p class="text-secondary">chỉ từ <span class="textvdn">(VND)</span></p>
+                                                <p class="vnd fs-3">{{pr.gia}}*</p>
+
+                                            </div>
+                                            <div class="cbt">
+                                                <p class="fw-medium text-secondary">{{pr.phanloai}}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- Thêm các cột tiếp theo tại đây nếu cần -->
+
+                </div>
+
+                <div class="bnt_xt text-center">
+                    <button class="bg-success border border-1 rounded px-4 py-3 "><a
+                            class="text-decoration-none text-light fw-normal fs-4 " href="#">Xem
+                            Thêm</a></button>
+                </div>
+                <div class="caption_bt text-center">
+                    <p class="fst-italic mt-3 text-secondary">*Giá vé được thu thập trong vòng 24 giờ và có thể không
+                        còn
+                        hiệu
+                        lực tại thời điểm đặt
+                        chỗ.</p>
+                </div>
+            </div>
+            <div class="container-fluid2">
+                <div class="banner_bt">
+                    <img src="./anh/products/pc3.webp" class="container-fluid" style="object-fit: cover;" alt="">
+                </div>
+            </div>
+            <div class="container mb-5">
+                <div class="chuyenbay_hot">
+                    <div class="titel">
+                        <h2 class="text-center m-4">{{ddhot}}</h2>
+                    </div>
+                    <div class="row1 mb-5">
+                        <div class="row">
+                            <div class="col ">
+                                <div class="thumbnail">
+                                    <div class=" position-relative">
+                                        <img src="./anh/products/DANAng.jpg" class="rounded img-fluid w-100"
+                                            style="object-fit: cover; ">
+                                        <div
+                                            class="position-absolute bottom-0 start-50 translate-middle-x text-white p-4">
+                                            <p class="text-white fs-4 fw-bolder">Đà Nẵng</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail">
+                                    <div class=" position-relative">
+                                        <img src="./anh/products/HaNoiT.jpg" class="rounded img-fluid w-100"
+                                            style="object-fit: cover;">
+                                        <div
+                                            class="position-absolute bottom-0 start-50 translate-middle-x text-white p-4">
+                                            <p class="text-white fs-4 fw-bolder">Hà Nội</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="thumbnail">
+                                    <div class=" position-relative">
+                                        <img src="./anh/products/HaNam.jpg" class="rounded img-fluid w-100"
+                                            style="object-fit: cover;">
+                                        <div
+                                            class="position-absolute bottom-0 start-50 translate-middle-x text-white p-4">
+                                            <p class="text-white fs-4 fw-bolder">Hà Nam</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row2">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <div class=" position-relative">
+                                        <img src="./anh/products/dia-diem-du-lich-o-hue-6.jpg"
+                                            class="rounded img-fluid w-100" style="object-fit: cover;">
+                                        <div
+                                            class="position-absolute bottom-0 start-50 translate-middle-x text-white p-4">
+                                            <p class="text-white fs-4 fw-bolder">Huế</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <div class=" position-relative">
+                                        <img src="./anh/products/hon-mong-tay-phu-quoc-thien-duong-du-lich-1024x680.jpg"
+                                            class="rounded img-fluid w-100" style="object-fit: cover;">
+                                        <div
+                                            class="position-absolute bottom-0 start-50 translate-middle-x text-white p-4">
+                                            <p class="text-white fs-4 fw-bolder">Phú Quốc</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="thumbnail">
+                                    <div class=" position-relative">
+                                        <img src="./anh/products/QUangBinh.jpg" class="rounded img-fluid w-100"
+                                            style="object-fit: cover;">
+                                        <div
+                                            class="position-absolute bottom-0 start-50 translate-middle-x text-white p-4">
+                                            <p class="text-white fs-4 fw-bolder">Quảng Bình</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bnt_xt text-center mt-3 ">
+                    <button class="bg-success border border-1 rounded px-4 py-3 "><a
+                            class="text-decoration-none text-light fw-normal fs-4 " href="#">Xem
+                            Thêm</a></button>
+                </div>
+                <div class="caption_bt text-center">
+                    <p class="fst-italic mt-3 text-secondary">*Giá vé được thu thập trong vòng 24 giờ và có thể không
+                        còn
+                        hiệu
+                        lực tại thời điểm đặt
+                        chỗ.</p>
+                </div>
+            </div>
+        </div>
+    </div>

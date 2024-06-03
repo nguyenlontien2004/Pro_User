@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="taitel">
+        <h2 class="text-center pt-4 mb-4">{{hi}}</h2>
+    </div>
+    <div class="content pb-3 ">
+        <table class="text-center table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Địa điểm</th>
+                    <th>Giá</th>
+                    <th>Hình</th>
+                    <th>Phân Loại</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{inputValue.diemxuatphat}} --> {{inputValue.diemden}}</td>
+                    <td>{{inputValue.gia | number}} VND</td>
+                    <td><img ng-src="{{inputValue.hinhanh}}" alt="" height="80"></td>
+                    <td ng-if="inputValue.phanloai == 1">1 chiều</td>
+                    <td ng-if="inputValue.phanloai == 0">2 chiều</td>
+                    <td>
+                        <a href="#!/trang-chu"><button class="btn btn-warning">Quay Lại</button></a>
+                        <a href="#!/sua/{{inputValue.id}}"><button class="btn btn-warning">Sửa</button></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

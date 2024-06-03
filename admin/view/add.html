@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="taitel">
+        <h2 class="text-center pt-4 mb-4">{{pro}}</h2>
+    </div>
+    <form>
+        <div class="mb-3 row">
+            <div class="col">
+                <label for="startPoint" class="form-label">Điểm xuất phát</label>
+                <input type="text" class="form-control" ng-model="inputValue.diemxuatphat" id="startPoint"
+                    placeholder="Nhập điểm xuất phát...">
+            </div>
+            <div class="col">
+                <label for="endPoint" class="form-label">Điểm đến</label>
+                <input type="text" class="form-control" ng-model="inputValue.diemden" id="endPoint"
+                    placeholder="Nhập điểm đến...">
+            </div>
+        </div>
+        <div class="mb-3 row">
+            <div class="col">
+                <label for="productPrice" class="form-label">Giá</label>
+                <input type="number" class="form-control" ng-model="inputValue.gia" id="productPrice"
+                    placeholder="Nhập Giá">
+            </div>
+            <div class="col">
+                <label for="name">Phân loại:</label><br>
+                <div class="form-check form-check-inline mt-1">
+                    <input class="form-check-input" type="radio" ng-model="inputValue.phanloai" name="exampleRadio"
+                        id="radioOption1" value="1">
+                    <label class="form-check-label" for="radioOption1">
+                        1 Chiều
+                    </label>
+                </div>
+                <div class="form-check form-check-inline mt-1">
+                    <input class="form-check-input" type="radio" ng-model="inputValue.phanloai" name="exampleRadio"
+                        id="radioOption2" value="0">
+                    <label class="form-check-label" for="radioOption2">
+                        2 Chiều
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="productImage" class="form-label">Ảnh Sản Phẩm</label>
+            <input type="text" class="form-control" ng-model="inputValue.hinhanh" id="productImage">
+        </div>
+        <div class="pb-3 text-center">
+            <button type="submit" class="btn btn-primary" ng-click="addSubmit()">Submit</button>
+        </div>
+    </form>
+</div>

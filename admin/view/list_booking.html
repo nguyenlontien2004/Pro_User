@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="taitel">
+        <h2 class="text-center pt-4 mb-4">{{title}}</h2>
+    </div>
+    <div class="content pb-3 ">
+        <table class="text-center table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Họ và Tên</td>
+                    <td>Email</td>
+                    <td>Số CMTND</td>
+                    <td>Giới tính</td>
+                    <td>Số điện thoại</td>
+                    <td>Năm sinh</td>
+                    <td>Địa điểm</td>
+                    <td>Hành khách</td>
+                    <td>Ngày khởi hành</td>
+                    <td>Phân Loại</td>
+                    <td>Action</td>
+                </tr>
+            </thead>
+            <!-- | limitTo:3 -->
+            <tbody>
+                <tr ng-repeat="bk in booking | orderBy:'gia' | filter:tkiem ">
+                    <td>{{$index+1}}</td>
+                    <td>{{bk.hoten}}</td>
+                    <td>{{bk.email}}</td>
+                    <td>{{bk.cmtnd}}</td>
+                    <td ng-if="bk.gioitinh == 1">Nam</td>
+                    <td ng-if="bk.gioitinh == 2">Nữ</td>
+                    <td>{{bk.sodienthoai}}</td>
+                    <td>{{bk.namsinh}}</td>
+                    <td>{{pr.diemkhoihanh}} --> {{pr.diemketthuc}}</td>
+                    <td>{{bk.hanhkhach}}</td>
+                    <td>{{bk.ngaykhoihanh}}</td>
+                    <td ng-if="bk.phanloai == 1">1 chiều</td>
+                    <td ng-if="pr.phanloai == 0">2 chiều</td>
+                    <td><a href="#!/chitiet/{{bk.id}}"><button class="btn btn-warning">Chi tiết</button></a>|<a
+                            href="#!/sua/{{bk.id}}"><button class="btn btn-warning">Sửa</button></a>|<button
+                            class="btn btn-danger" ng-click="deletePro(bk.id)">Xóa</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <center>
+        <div class="pation align-content-center">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center"> <!-- Thêm class justify-content-center -->
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous" ng-click="prev()">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next" ng-click="next()">
+                            <span aria-hidden=" true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </center>
+</div>

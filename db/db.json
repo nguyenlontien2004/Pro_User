@@ -1,0 +1,120 @@
+{
+  "products": [
+    {
+      "diemxuatphat": "Chiến Hết Mình",
+      "diemden": "Đấu",
+      "gia": 44444444,
+      "hinhanh": "https://1.bp.blogspot.com/-K_dwkb40TU0/XzXcrAl7t0I/AAAAAAAAXBc/C-Pe3qkh5AUBfvNOUCpUWK-G082hVk5QQCNcBGAsYHQ/s1920/Da%2BLat4.jpg",
+      "phanloai": "1",
+      "id": "dac6"
+    },
+    {
+      "id": "faee",
+      "diemxuatphat": "Chiến",
+      "diemden": "Đấu",
+      "gia": 6666666,
+      "phanloai": "1",
+      "hinhanh": "https://1.bp.blogspot.com/-K_dwkb40TU0/XzXcrAl7t0I/AAAAAAAAXBc/C-Pe3qkh5AUBfvNOUCpUWK-G082hVk5QQCNcBGAsYHQ/s1920/Da%2BLat4.jpg"
+    },
+    {
+      "id": "9abd",
+      "diemxuatphat": "Chiến",
+      "diemden": "Đấu",
+      "gia": 3333,
+      "phanloai": "0",
+      "hinhanh": "https://1.bp.blogspot.com/-K_dwkb40TU0/XzXcrAl7t0I/AAAAAAAAXBc/C-Pe3qkh5AUBfvNOUCpUWK-G082hVk5QQCNcBGAsYHQ/s1920/Da%2BLat4.jpg"
+    },
+    {
+      "id": "0951",
+      "diemxuatphat": "Chiến",
+      "diemden": "Đấu",
+      "gia": 4444,
+      "phanloai": "1",
+      "hinhanh": "https://1.bp.blogspot.com/-K_dwkb40TU0/XzXcrAl7t0I/AAAAAAAAXBc/C-Pe3qkh5AUBfvNOUCpUWK-G082hVk5QQCNcBGAsYHQ/s1920/Da%2BLat4.jpg"
+    },
+    {
+      "diemxuatphat": "Hà Nội",
+      "diemden": "Thành Phố Hồ Chí Minh",
+      "gia": 44444444,
+      "hinhanh": "https://1.bp.blogspot.com/-K_dwkb40TU0/XzXcrAl7t0I/AAAAAAAAXBc/C-Pe3qkh5AUBfvNOUCpUWK-G082hVk5QQCNcBGAsYHQ/s1920/Da%2BLat4.jpg",
+      "phanloai": "0",
+      "id": "78a7"
+    },
+    {
+      "id": "eeb6",
+      "diemxuatphat": "Hà Nội",
+      "diemden": "Bà Rịa",
+      "phanloai": "0",
+      "gia": 33333
+    },
+    {
+      "id": "3428",
+      "diemxuatphat": "Hà Nội",
+      "diemden": "Bà Rịa",
+      "gia": 44444,
+      "phanloai": "0",
+      "hinhanh": "https://1.bp.blogspot.com/-K_dwkb40TU0/XzXcrAl7t0I/AAAAAAAAXBc/C-Pe3qkh5AUBfvNOUCpUWK-G082hVk5QQCNcBGAsYHQ/s1920/Da%2BLat4.jpg"
+    },
+    {
+      "id": "8184",
+      "diemxuatphat": "Hà Nội",
+      "diemden": "Bà Rịa",
+      "gia": 45555555,
+      "phanloai": "0",
+      "hinhanh": "https://1.bp.blogspot.com/-K_dwkb40TU0/XzXcrAl7t0I/AAAAAAAAXBc/C-Pe3qkh5AUBfvNOUCpUWK-G082hVk5QQCNcBGAsYHQ/s1920/Da%2BLat4.jpg"
+    },
+    {
+      "id": "c346",
+      "diemden": ""
+    },
+    {
+      "id": "0953",
+      "diemden": ""
+    },
+    {
+      "id": "05f0",
+      "diemden": ""
+    },
+    {
+      "id": "6a50",
+      "diemden": ""
+    },
+    {
+      "id": "8100",
+      "diemxuatphat": "Lộc không lỗi",
+      "gia": 222222222,
+      "hinhanh": "https://1.bp.blogspot.com/-K_dwkb40TU0/XzXcrAl7t0I/AAAAAAAAXBc/C-Pe3qkh5AUBfvNOUCpUWK-G082hVk5QQCNcBGAsYHQ/s1920/Da%2BLat4.jpg",
+      "phanloai": "0",
+      "diemden": "Thành Phố Hồ Chí Minh"
+    }
+  ],
+  "booking": [],
+  "lienhe": [
+    {
+      "email": "bia2",
+      "pass": 2347,
+      "username": "2",
+      "id": "d440"
+    },
+    {
+      "email": "bia2",
+      "pass": 2347,
+      "username": "2",
+      "id": "e838"
+    }
+  ],
+  "user": [
+    {
+      "email": "bia2",
+      "pass": 2347,
+      "username": "2",
+      "id": "caf1"
+    },
+    {
+      "email": "bia2",
+      "pass": 2347,
+      "username": "2",
+      "id": "5355"
+    }
+  ]
+}
