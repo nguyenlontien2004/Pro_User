@@ -18,7 +18,21 @@ angular.module("myRoute", ["ngRoute"]).config(function ($routeProvider) {
     .when("/chitiet/:id", {
       //Định nghĩa route
       templateUrl: "../../admin/view/chitiet.html", //view theo
-      controller: CtCBController,
+      controller: CtBKController,
+    })
+    .when("/add-dd", {
+      //Định nghĩa route
+      templateUrl: "../../admin/view/adddiadiem.html", //view theo
+      controller: AddddController,
+    })
+    .when("/list_dd", {
+      templateUrl: "../../admin/view/list_dd.html", //view theo
+      controller: ListddController,
+    })
+    .when("/sua_dd/:id", {
+      //Định nghĩa route
+      templateUrl: "../../admin/view/suadd.html", //view theo
+      controller: EditddController,
     })
     .when("/add-bk", {
       //Định nghĩa route

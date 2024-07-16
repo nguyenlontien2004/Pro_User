@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="taitel">
+        <h2 class="text-center pt-4 mb-4">{{hi}}</h2>
+    </div>
+    <div class="content pb-3 ">
+        <table class="text-center table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <th>Địa điểm</th>
+                    <th>Hình</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="dd in diadiem ">
+                    <td>{{$index+1}}</td>
+                    <td>{{dd.name}}</td>
+                    <td><img ng-src="{{dd.hinh}}" alt height="80"></td>
+                    <td><a class="btn btn-danger"
+                            ng-click="deletePro(dd.id)">Xóa</button></a>|<a
+                            href="#!/sua_dd/{{dd.id}}"><button
+                                class="btn btn-warning">Sửa</button></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

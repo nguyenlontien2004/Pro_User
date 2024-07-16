@@ -20,12 +20,14 @@
                     <td>{{$index+1}}</td>
                     <td>{{pr.diemxuatphat}} --> {{pr.diemden}}</td>
                     <td>{{pr.gia | number}} VND</td>
-                    <td><img ng-src="{{pr.hinhanh}}" alt="" height="80"></td>
+                    <td><img ng-src="{{pr.hinhanh}}" alt height="80"></td>
                     <td ng-if="pr.phanloai == 1">1 chiều</td>
                     <td ng-if="pr.phanloai == 0">2 chiều</td>
-                    <td><a href="#!/chitiet/{{pr.id}}"><button class="btn btn-warning">Chi tiết</button></a>|<a
-                            href="#!/sua/{{pr.id}}"><button class="btn btn-warning">Sửa</button></a>|<button
-                            class="btn btn-danger" ng-click="deletePro(pr.id)">Xóa</button></td>
+                    <td><a
+                            href="#!/sua/{{pr.id}}"><button
+                                class="btn btn-warning">Sửa</button></a>|<button
+                            class="btn btn-danger"
+                            ng-click="deletePro(pr.id)">Xóa</button></td>
                 </tr>
             </tbody>
         </table>
@@ -33,17 +35,23 @@
     <center>
         <div class="pation align-content-center">
             <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center"> <!-- Thêm class justify-content-center -->
+                <ul class="pagination justify-content-center">
+                    <!-- Thêm class justify-content-center -->
                     <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Previous" ng-click="prev()">
+                        <a class="page-link" href="#" aria-label="Previous"
+                            ng-click="prev()">
                             <span aria-hidden="true">&laquo;</span>
                         </a>
                     </li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link"
+                            href="#">1</a></li>
+                    <li class="page-item"><a class="page-link"
+                            href="#">2</a></li>
+                    <li class="page-item"><a class="page-link"
+                            href="#">3</a></li>
                     <li class="page-item">
-                        <a class="page-link" href="#" aria-label="Next" ng-click="next()">
+                        <a class="page-link" href="#" aria-label="Next"
+                            ng-click="next()">
                             <span aria-hidden=" true">&raquo;</span>
                         </a>
                     </li>

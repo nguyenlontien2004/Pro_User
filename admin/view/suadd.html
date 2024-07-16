@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="taitel">
+        <h2 class="text-center pt-4 mb-4">{{pro}}</h2>
+    </div>
+    <form>
+        <div class="mb-3">
+            <div class="col">
+                <label for="startPoint" class="form-label">Name</label>
+                <input type="text" class="form-control"
+                    ng-model="inputValue.name" id="startPoint"
+                    placeholder="Nhập địa điểm hot...">
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="productImage" class="form-label">Ảnh Địa ĐIểm</label>
+            <input type="text" class="form-control"
+                ng-model="inputValue.hinh" id="productImage">
+        </div>
+        <div class="pb-3 text-center">
+            <button type="submit" class="btn btn-primary"
+                ng-click="addSubmit()">Submit</button>
+        </div>
+    </form>
+</div>

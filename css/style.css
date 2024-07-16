@@ -1,81 +1,83 @@
 .navbar {
-    background-color: #2d7893;
+  background-color: #2d7893;
 }
 body {
-    color: #101828;
-    background-color: #f2f4f7;
+  color: #101828;
+  background-color: #f2f4f7;
 }
 
 .caption {
-    /* font-family: 'Maven Pro'; */
-    font-style: normal;
-    font-weight: 500;
-    /* font-size: 16px; */
-    line-height: 120%;
-    color: #101828;
-    margin-bottom: 4px;
+  /* font-family: 'Maven Pro'; */
+  font-style: normal;
+  font-weight: 500;
+  /* font-size: 16px; */
+  line-height: 120%;
+  color: #101828;
+  margin-bottom: 4px;
 }
-
+.collapse {
+  color: #fff;
+}
 .vnd {
-    color: #00558F;
-    margin-top: -10px;
+  color: #00558f;
+  margin-top: -10px;
 }
 
 .hang,
 .uytin {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .textvdn {
-    color: #00558F;
+  color: #00558f;
 }
 
 .content {
-    padding-left: 12px;
-    padding-right: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .content-footer ul a {
-    text-decoration: none;
-    color: #FFF;
-    font-family: "DiavloLight", Arial;
-    font-size: 16px;
-    width: 100%;
-    margin-bottom: 6px;
+  text-decoration: none;
+  color: #fff;
+  font-family: "DiavloLight", Arial;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 6px;
 }
 
 .content-footer h4 {
-    font-size: 18px;
-    color: #F6EDCC !important;
-    font-weight: bold !important;
-    display: inline-block;
-    margin: 0;
-    font-family: "DiavloLight", Arial;
+  font-size: 18px;
+  color: #f6edcc !important;
+  font-weight: bold !important;
+  display: inline-block;
+  margin: 0;
+  font-family: "DiavloLight", Arial;
 }
 
 .munu {
-    list-style-type: none;
+  list-style-type: none;
 }
-.menu{
-    text-decoration: none;
+.menu {
+  text-decoration: none;
 }
 .cb {
-    background: #FFFFFF;
-    border: 1px solid #F2F4F7;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    height: 100%;
+  background: #ffffff;
+  border: 1px solid #f2f4f7;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 100%;
 }
 .black-block {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px; /* Điều chỉnh chiều cao của khối đen theo nhu cầu */
-    background-color: #000; /* Màu đen */
-    z-index: 999; /* Đảm bảo khối này hiển thị trên navbar */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; /* Điều chỉnh chiều cao của khối đen theo nhu cầu */
+  background-color: #000; /* Màu đen */
+  z-index: 999; /* Đảm bảo khối này hiển thị trên navbar */
 }
 
 /* 
@@ -85,82 +87,76 @@ body {
 
 } */
 
-
 .navbar-brand img {
-    max-height: 50px;
+  max-height: 50px;
 }
 
 .carousel-inner {
-    text-align: center;
+  text-align: center;
 }
 
-
-
 .carousel-item {
-    height: 70vh;
-    /* Chiều cao của slide ảnh */
-    background-size: cover;
+  height: 70vh;
+  /* Chiều cao của slide ảnh */
+  background-size: cover;
 }
 
 .booking-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .jumbotron {
-    background-size: cover;
-    color: white;
-    font-size: large;
-    text-align: center;
-    padding: 100px 0;
-    margin-bottom: 0;
+  background-size: cover;
+  color: white;
+  font-size: large;
+  text-align: center;
+  padding: 100px 0;
+  margin-bottom: 0;
 }
 
 .main {
-    background-image: url('../anh/products/lienhe.jpg');
+  background-image: url("../anh/products/lienhe.jpg");
 }
 
 .content {
-    background-size: cover;
-    height: auto;
-    /* Chiều cao của khối hình ảnh */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 130px;
-    color: white;
+  background-size: cover;
+  height: auto;
+  /* Chiều cao của khối hình ảnh */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 130px;
+  color: white;
 }
 
 .form {
-    background-color: rgba(181, 181, 181, 0.7);
-    width: 100%;
+  background-color: rgba(181, 181, 181, 0.7);
+  width: 100%;
 }
 
-
 .footer {
-    background-color: #2d7893;
-
+  background-color: #2d7893;
 }
 
 .background-image {
-    background-image: url('../anh/products/lienhe.jpg');
-    object-fit: cover;
-    background-position: center;
-    height: 1000px;
-    position: relative;
-    color: white;
+  background-image: url("../anh/products/lienhe.jpg");
+  object-fit: cover;
+  background-position: center;
+  height: 1000px;
+  position: relative;
+  color: white;
 }
 
-
 .form-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
 }

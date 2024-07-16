@@ -1,17 +1,16 @@
-window.CtCBController = function ($scope, $http, $location, $routeParams) {
-  $scope.hi = "CHI TIẾT SẢN PHẨM";
+window.CtBKController = function ($scope, $http, $location, $routeParams) {
+  $scope.hi = "Chi tiết vé";
+  let apiBK = "http://localhost:3000/booking";
 
-  let DiPro = "http://localhost:3000/products";
-
-  $scope.getPro = function (id) {
-    $http.get(`${DiPro}/${id}`).then((res) => {
+  $scope.getBK = function (id) {
+    $http.get(`${apiBK}/${id}`).then((res) => {
       if (res.status == 200) {
-        $scope.inputValue = res.data;
+        $scope.booking = res.data;
       }
     });
   };
   if ($routeParams.id) {
-    $scope.getPro($routeParams.id);
+    $scope.getBK($routeParams.id);
   } else {
     $location.path("/trang-chu");
   }
